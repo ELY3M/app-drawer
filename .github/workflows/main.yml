@@ -29,7 +29,7 @@ jobs:
       - name: current dir
         run: | 
             pwd
-            ls -la app/build/outputs/apk  
+            ls -la app/build/outputs/apk/release 
 
       - name: Setup build tool version variable
         shell: bash
@@ -42,7 +42,7 @@ jobs:
         uses: r0adkll/sign-android-release@v1
         id: sign_app
         with:
-          releaseDirectory: build/outputs/apk/lawnWithQuickstepGithub/release/
+          releaseDirectory: build/outputs/apk/release/
           signingKeyBase64: ${{ secrets.KEY }}
           alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.PASSWORD }}
@@ -66,6 +66,4 @@ jobs:
           
         
         
-        
-        
-       
+     
