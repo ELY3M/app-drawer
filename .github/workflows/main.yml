@@ -29,8 +29,7 @@ jobs:
       - name: current dir
         run: | 
             pwd
-            ls -la app/build
-            ls -la build/kotlin      
+            ls -la app/build/outputs/apk  
 
       - name: Setup build tool version variable
         shell: bash
