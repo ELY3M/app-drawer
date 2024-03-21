@@ -29,8 +29,8 @@ jobs:
       - name: current dir
         run: | 
             pwd
-            ls -la app/release  
-            ls -la build/outputs/apk/         
+            ls -la app 
+            ls -la build         
 
       - name: Setup build tool version variable
         shell: bash
