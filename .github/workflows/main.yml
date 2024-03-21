@@ -28,7 +28,8 @@ jobs:
         
       - name: current dir
         run: | 
-            ls -la build/outputs/apk/    
+            pwd
+            ls -la   
 
       - name: Setup build tool version variable
         shell: bash
